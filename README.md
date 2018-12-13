@@ -1,6 +1,6 @@
 # Testing mit Mockito
 
-Sieh nach im `pom.xml` nach, welche Abhängigkeiten definiert sind.
+Sieh im `pom.xml` nach, welche Abhängigkeiten definiert sind.
 
 ## Mock konfigurieren und benutzen
 
