@@ -1,16 +1,16 @@
 package ch.juventus.example;
 
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@RunWith(MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class TransferServiceImplTest {
 
     @Mock
@@ -19,7 +19,7 @@ public class TransferServiceImplTest {
     private Account fromAccount = new Account("1", BigDecimal.valueOf(50));
     private Account toAccount = new Account("2", BigDecimal.valueOf(80));
 
-    @Before
+    @BeforeEach
     public void setupMocks() {
         // TODO
         // train the accountRepository mock
